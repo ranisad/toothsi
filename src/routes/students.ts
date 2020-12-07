@@ -1,8 +1,8 @@
 export {}
 const routes = require('express').Router();
-const mongoConnection = require('./../../src/DAL/index');
-const { CourseEnrollment } = require('./../../src/DAL/entity/CourseEnrollment');
-const { Attendance } = require('./../../src/DAL/entity/Attendance');
+const mongoConnection = require('./../DAL/index');
+const { CourseEnrollment } = require('./../DAL/entity/CourseEnrollment');
+const { Attendance } = require('./../DAL/entity/Attendance');
 const {User} = require('./../DAL/entity/User');
 const {Subject} = require('./../DAL/entity/Subject');
 const _ = require('underscore');

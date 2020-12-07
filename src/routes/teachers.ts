@@ -2,8 +2,8 @@ import { Attendance } from "../DAL/entity/Attendance";
 
 export {}
 const routes = require('express').Router();
-const mongoConnection = require('./../../src/DAL/index');
-const { Subject } = require('./../../src/DAL/entity/Subject');
+const mongoConnection = require('./../DAL/index');
+const { Subject } = require('./../DAL/entity/Subject');
 var ObjectId = require('mongodb').ObjectId;
 
 //middleware to authenticate teachers related api calls

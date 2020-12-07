@@ -1,4 +1,4 @@
-import {Entity, ObjectIdColumn, ObjectID, Column, Unique} from "typeorm";
+import { Entity, ObjectIdColumn, ObjectID, Column } from "typeorm";
 
 @Entity()
 export class Attendance {

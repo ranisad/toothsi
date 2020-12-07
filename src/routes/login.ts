@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const mongoConnection = require('./../../src/DAL/index');
+const mongoConnection = require('./../DAL/index');
 const hashFunction = require('../utils/hashing');
 const jwtProvider = require('../utils/jwt.service');
 const redisProvider = require('../utils/redis.service');
-const { User } = require('./../../src/DAL/entity/User')
+const { User } = require('./../DAL/entity/User');
 
 router.post('/login', async (req, res) => {
     let {username, password, isTeacher} = req.body;
