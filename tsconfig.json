@@ -9,10 +9,12 @@
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "sourceMap": true,
-      "types": ["node"],
-      "typeRoots": ["./node_modules/@types"]
+      "sourceMap": true
    },
-   "include": ["src/**/*.ts"],
-   "exclude": ["node_modules"]
+   "include" : [
+      "src/**/*.ts"   /* Include every ts file in source folder */
+  ],
+  "exclude" : [
+      "node_modules"  /* exclude everything in  node_modules */
+  ]
 }
