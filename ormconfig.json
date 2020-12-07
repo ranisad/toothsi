@@ -1,0 +1,22 @@
+{
+   "type": "mongodb",
+   "url": "mongodb+srv://dbuser2:L7ou8zGo83lvgdlo@toothsi.tmrc4.mongodb.net/toothsi?retryWrites=true&w=majority",
+   "useNewUrlParser": true,
+   "useUnifiedTopology":true,
+   "synchronize": true,
+   "logging": true,
+   "entities": [
+      "src/DAL/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/DAL/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/DAL/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/DAL/entity",
+      "migrationsDir": "src/DAL/migration",
+      "subscribersDir": "src/DAL/subscriber"
+   }
+}
